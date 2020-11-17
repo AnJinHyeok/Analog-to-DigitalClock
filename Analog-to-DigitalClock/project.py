@@ -68,7 +68,7 @@ def display_lines(image, lines):
     return line_image
 
 #frame = cv2.imread('clock_s.png')
-cap = cv2.VideoCapture('clock_f.mp4')
+cap = cv2.VideoCapture('clock.mp4')
 while(cap.isOpened()):
   _, frame = cap.read()
   copy_imag = frame.copy()
