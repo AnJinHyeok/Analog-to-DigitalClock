@@ -82,8 +82,8 @@ while(cap.isOpened()):
   upper_white = (255, 255, 255)
   img_mask_white = cv2.inRange(copy_imag, lower_white, upper_white)
 
-  #center = find_center(frame)
-  center = [204,204]
+  center = find_center(frame)
+  #center = [204,204]
   
   angle_red = find_angle(center, find_point(img_mask_red))
   angle_blue = find_angle(center, find_point(img_mask_blue))
